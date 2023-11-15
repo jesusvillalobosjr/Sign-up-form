@@ -1,0 +1,47 @@
+html,body{
+    margin: 0;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+.sign-up-image-and-logo{
+    height: 100vh;
+    width: 40%;
+    background-color: red;
+    position: relative;
+}
+
+.sign-up-image-and-logo .sign-up-image{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    position: absolute;
+}
+
+.sign-up-image-and-logo .logo-container{
+    height: 150px;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20%;
+}
+
+.sign-up-image-and-logo .logo-container::before{
+    content: '';
+    height: 100px;
+    width: 400px;
+    background-image: url(logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 40%;
+    color: white;
+    position: absolute;
+    font-size: 3rem;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
