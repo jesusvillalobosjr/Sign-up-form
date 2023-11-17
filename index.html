@@ -5,11 +5,49 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
+        <script src="index.js" defer></script>
     </head>
     <body>
         <div class="sign-up-image-and-logo">
             <img src="https://img.freepik.com/free-photo/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg?t=st=1700078629~exp=1700082229~hmac=0aea7c7c7c068e338293f0fc08b364153315026c48afb4f58cdfe25b06de7e62&w=2000" alt="Mount Fuji" class="sign-up-image">
             <div class="logo-container"></div>
+        </div>
+        <div class="form-container">
+            <div class="form-text-container">
+                <h3 class="form-text-one">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</h3>
+                <h3 class="form-text-two">Sign up now to get started.</h3>
+                <h3 class="form-text-three">You <i>know</i> you want to.</h3>
+            </div>
+            <form action="" method="get" class="form">
+                <div class="label-input">
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" class="first-name" id="first-name" required>
+                </div>
+                <div class="label-input">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" class="last-name" id="last-name" required>
+                </div>
+                <div class="label-input">
+                    <label for="email">Email Address</label>
+                    <input type="email" name="email" class="email" id="email" required>
+                </div>
+                <div class="label-input">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" name="phone" class="phone" id="phone" required pattern="\d{3}-?\d{3}-?\d{4}">
+                </div>
+                <div class="label-input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" class="password" id="password" minlength="8" required>
+                    <span></span>
+                </div>
+                <div class="label-input">
+                    <label for="password-confirmation">Confirm Password</label>
+                    <input type="password" name="password-confirmation" class="password-confirmation" id="password-confirmation" required>
+                    <span></span>
+                </div>
+            </form>
+            <button class="submit-button">Create Account</button>
+            <p class="log-in-re-direction">Already have an account? <a href="" class="log-in-link">Log in</a></p>
         </div>
     </body>
 </html>
